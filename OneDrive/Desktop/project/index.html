@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Manipulating Arrays</title>
+</head>
+<body>
+    <h1>Manipulating Arrays</h1>
+<script>
+   console.log("hello World") 
+
+   // for loop from beginning to end and vice versa
+   const letters = ['a', 'b', 'c', 'd', 'e']
+   for (let idx = 0; idx < letters.length; idx++ ){
+    let char = letters[idx]
+    console.log(char)
+   }
+   for (let index = letters.length -1; index >-1; index--){
+   let char = letters[index]
+    console.log(char)
+   } 
+
+   // 2 mulitply every third number starting with the second element
+  const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+   let multiplied = 1
+   let iteration = 1
+   for (let i = 1; i < num.length; i += 3){
+    console.log(`iteration ${iteration++}`)
+    console.log(`index ${i}`)
+    console.log(`element ${num[i]}`)
+    console.log(`\n`)
+  } 
+
+  // while loop from beginning to end and vice versa
+  const fruits = ['apple', 'orange', 'banana', 'tomato', 'pineapple']
+
+  let index = 0
+  while(index < fruits.length) {
+    console.log(fruits[index])
+    index++
+  }
+
+
+</body>
+</html>
